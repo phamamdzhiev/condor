@@ -1,0 +1,50 @@
+@media only screen and (max-width: 768px) {
+	.fixed-logo {
+		display: none;
+		top: 1rem;
+	}
+	header {
+		width: 100%;
+		margin-top: 0!important;
+		margin-bottom: 5px;
+	}
+	.icon {
+		display: block!important;
+		float: right;
+		top: 5px;
+		font-size: 28px;
+		color: white;
+		position: absolute;
+		right: 25px;
+	}
+	.menu {
+		display: none;
+		margin: 0;
+	}
+	.menu li {
+		display: block!important;
+		margin: 10px 0;
+		background-color: #03292a;
+		border-bottom: 1px solid white;
+		text-align: center;
+	}
+	.dropdown-content {
+		top: 150px;
+		left: 150px;
+	}
+	.row {
+		height: auto!important;
+	}
+	.container {
+		max-width: 100%;
+		width: 100%;
+		padding: 0!important;
+	}
+	footer {
+		text-align: center;
+	}
+	footer ul {
+		position: initial;
+		float: none;
+	}
+}

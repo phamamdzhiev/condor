@@ -1,0 +1,141 @@
+@import "reset";
+@import "colors";
+@mixin hoverEffect {
+  color: white;
+  text-transform: none;
+}
+
+body {
+    overflow-x: hidden;
+  .fixed-logo {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    z-index: 9999;
+  }
+  .fixed-logo img {
+    max-width: 100%;
+  }
+  .container {
+    max-width: 1280px;
+  }
+  background-color: $bgColor;
+  header {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: $headerColor;
+    color: white;
+    #logo-holder {
+      padding: 10px 0;
+    }
+    #logo-holder img {
+      max-width: 100%;
+    }
+  }
+  .row {
+    background-color: $mainPartColor;
+    height: 100vh;
+    margin: 0;
+    .left {
+      border: 7px solid $borderAndMenuBtns;
+      color: white;
+      height: 100%;
+      p {
+        text-indent: 50px;
+      }
+    }
+    .right {
+      border: 7px solid #065252;
+      color: white;
+      height: 100%;
+      h4 {
+        text-transform: uppercase;
+        margin: 15px 0;
+      }
+    }
+  }
+}
+.show {
+  display: none;
+}
+.menu {
+  width: auto;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 10px;
+  position: relative;
+  li {
+    padding: 5px 30px;
+    background-color: $borderAndMenuBtns;
+    display: inline-block;
+    a {
+      font-weight: 800;
+      color: white;
+      text-transform: capitalize;
+    }
+  }
+}
+#links {
+  a {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      @include hoverEffect;
+    }
+  }
+}
+.share ul li {
+  font-size: 30px;
+  display: inline-block;
+  padding: 10px;
+}
+footer {
+  background-color: $borderAndMenuBtns;
+  color: white;
+  padding: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  p {
+    margin: 0;
+  }
+  ul {
+    float: right;
+    margin: 0;
+    top: -20px;
+    position: relative;
+    li {
+      display: inline-block;
+      margin-left: 10px;
+      a {
+        color: white;
+        text-decoration: underline;
+        &:hover {
+          @include hoverEffect();
+        }
+      }
+    }
+  }
+}
+#myDropdown a {
+  display: block;
+  color: white;
+  font-weight: 600;
+  padding: 4.5px 0px;
+  border-top: 1px solid white;
+  &:first-child {
+    border-top: 0;
+  }
+}
+.dropdown-content {
+  width: 195px;
+  position: absolute;
+  z-index: 100;
+  left: 330px;
+  padding: 10px;
+  display: none;
+  background-color: $borderAndMenuBtns;
+}
+.show {
+  display: block;
+}

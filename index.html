@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/smallscreen.css">
+      <link href="src/responsive-carousel.css" rel="stylesheet">
+      <link rel="stylesheet" href="owl/owl.carousel.min.css">
+      <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+      <script src="https://kit.fontawesome.com/1447c02b36.js" crossorigin="anonymous"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="dist/responsive-carousel.min.js"></script>
+      <title>Condor Task</title>
+   </head>
+   <body>
+      <div class="fixed-logo">
+         <img src="images/vertical-logo.jpg" alt="fixed-vertical-logo">
+      </div>
+      <div class="container">
+         <header>
+            <div id="logo-holder">
+               <img src="images/log.jpg" alt="logo" />
+            </div>
+            <ul class="menu" id="ul-menu">
+               <li><a href='#'>home</a></li>
+               <li><a href='#'>sport</a></li>
+               <li><a href='#'>casino</a></li>
+               <li><a  onclick='dropDown();' class="drop" href='javascript:void(0);'>games <i class="fas fa-caret-down"></i></a></li>
+               <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Mega Moolah</a>
+                  <a href="#">The curse of the black Pearl</a>
+                  <a href="#">Super slots attack</a>
+               </div>
+            </ul>
+            <a href="javascript:void(0);" class="icon" style="display:none;" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </header>
+         <main class="row">
+            <div class="col-lg-8 col-12 left">
+               <h1>Index</h1>
+               <hr>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+               <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable..There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+               <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+               <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+            <div class="col-lg-4 col-12 right">
+               <h4>share this article</h4>
+               <div class="share">
+                  <ul>
+                     <li>
+                        <i class="fas fa-envelope"></i>
+                     </li>
+                     <li>
+                        <i class="fas fa-envelope"></i>
+                     </li>
+                     <li>
+                        <i class="fas fa-envelope"></i>
+                     </li>
+                     <li>
+                        <i class="fas fa-envelope"></i>
+                     </li>
+                     <li>
+                        <i class="fas fa-envelope"></i>
+                     </li>
+                  </ul>
+               </div>
+               <div id="links">
+                  <h4>articles categories</h4>
+                  <a href="#">User Experience (UX)</a>
+                  <a href="#">Redesign</a>
+               </div>
+               <h4>Recent stories</h4>
+               <div class="owl-carousel">
+                  <div> 
+                     <img src="images/image-1.jpg" alt="carousel-image-1">
+                  </div>
+                  <div>
+                     <img src="images/image-2.jpg" alt="carousel-image-2">
+                  </div>
+                  <div>
+                     <img src="images/image-3.jpg" alt="carousel-image-3">
+                  </div>
+               </div>
+            </div>
+         </main>
+         <footer>
+            <p>2009-2017 &copy; Copyright Ltd. All rights reserved.</p>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Terms of use</a></li>
+               <li><a href="#">Responsible gaming</a></li>
+               <li><a href="#">Contact us</a></li>
+            </ul>
+         </footer>
+      </div>
+      <script src="owl/owl.carousel.min.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
